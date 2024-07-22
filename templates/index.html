@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Service</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <p class="description">DYCS에 오신걸 환영합니다</p>
+        <button class="button register" onclick="location.href='{{ url_for('register') }}'">회원가입</button>
+        <button class="button login" onclick="location.href='{{ url_for('login') }}'">로그인</button>
+    </div>
+</body>
+</html>
